@@ -1,38 +1,79 @@
-.App {
+body {
+  background: #FFE1E1;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: #90A17D;
+  flex-wrap: wrap;
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.showText__button {
+  background: none;
+  color: blue;
+  padding: none;
+}
+
+button {
+  background: #90A17D;
+  padding: 10px;
+  width: 100px;
+  border: none;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product_card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hidden {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+label, input, textarea {
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  padding: 7px;
+}
+
+textarea {
+  padding: 35px;
 }
